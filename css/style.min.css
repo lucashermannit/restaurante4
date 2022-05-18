@@ -222,7 +222,7 @@ a:hover {
 /*=================================
 =            TESTIMONY            =
 =================================*/
-#gtco-testimonial {
+#testimonial {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -332,7 +332,7 @@ a:hover {
 /*===================================
 =            RESERVATION            =
 ===================================*/
-#gtco-reservation {
+#reservation {
   height: 650px;
   margin-bottom: 200px; }
 
@@ -434,10 +434,10 @@ a:hover {
 /*======================================
 =            Special Dishes            =
 ======================================*/
-#gtco-special-dishes .special-number {
+#special-dishes .special-number {
   position: relative;
   font-size: 60px; }
-  #gtco-special-dishes .special-number:after {
+  #special-dishes .special-number:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -447,7 +447,7 @@ a:hover {
     height: 1px;
     background: #000; }
 
-#gtco-special-dishes h3 span {
+#special-dishes h3 span {
   color: #f34949; }
 
 .dishes-text {

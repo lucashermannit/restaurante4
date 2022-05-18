@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined"/>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
@@ -76,46 +77,20 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex justify-content-between">
-                <li class="nav-item only-desktop">
-                    <a class="nav-link" id="side-nav-open" href="#">
-                        <span class="lnr lnr-menu"></span>
-                    </a>
-                </li>
-                <div class="d-flex flex-lg-row flex-column">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Special Dishes
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="special-dishes.html">Beef Steak Sauce</a>
-                          <a class="dropdown-item" href="special-dishes.html">Salmon Zucchini</a>
-                        </div>
-                    </li>
-                </div>
-            </ul>
-            
+                       
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
                 <img src="img/logo.png" alt="">
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link" href="#home">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#menu">Menú</a>
                     </li>
-
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="reservation.html">Reservation</a>
+                        <a class="nav-link" href="#footer">Ubicación</a>
                     </li>
                 </div>
                 <li class="nav-item">
@@ -130,32 +105,29 @@
   <div class="container">
 	<div class="row d-flex align-items-center">
 		<div class="col-lg-6 hero-left">
-		    <h1 class="display-4 mb-5">We Love <br>Delicious Foods!</h1>
+		    <h1 class="display-4 mb-5">NUESTRA CAUSA <br>ERES TÚ</h1>
 		    <div class="mb-2">
-		    	<a class="btn btn-primary btn-shadow btn-lg" href="#" role="button">Explore Menu</a>
-			    <a class="btn btn-icon btn-lg" href="https://player.vimeo.com/video/33110953" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true">
-			    	<span class="lnr lnr-film-play"></span>
-			    	Play Video
-			    </a>
+		    	<a class="btn btn-primary btn-shadow btn-lg" href="#menu" role="button">Ver menú</a>
+                <a class="btn btn-primary btn-shadow btn-lg" href="https://www.google.com/maps/reserve/v/dine/c/BgJhkHwIpds?source=pa&hl=es-AR&gei=nn0vYqLeA9_L1sQPxKGZ8A0&sourceurl=https://www.google.com/search?q%3Dla%2Bcausa%2Bnikkei%2Brappi%26oq%3Dla%2Bcausa%2Bnikkei%2Brappi%26aqs%3Dchrome.0.69i59j69i64j69i60l3.752j0j7%26sourceid%3Dchrome%26ie%3DUTF-8" role="button">Hacer reserva</a>
 		    </div>
 		   
 		    <ul class="hero-info list-unstyled d-flex text-center mb-0">
 		    	<li class="border-right">
-		    		<span class="lnr lnr-rocket"></span>
+		    		<span class="material-symbols-outlined">motorcycle</span>
 		    		<h5>
-		    			Fast Delivery
+		    			Delivery
 		    		</h5>
 		    	</li>
 		    	<li class="border-right">
-		    		<span class="lnr lnr-leaf"></span>
+		    		<span class="material-symbols-outlined">restaurant</span>
 		    		<h5>
-		    			Fresh Food
+		    			Comida fusión
 		    		</h5>
 		    	</li>
 		    	<li class="">
-		    		<span class="lnr lnr-bubble"></span>
+		    		<span class="material-symbols-outlined">calendar_month</span>
 		    		<h5>
-		    			24/7 Support
+		    			Todos los días
 		    		</h5>
 		    	</li>
 		    </ul>
@@ -178,7 +150,7 @@
   </div>
 </div>	
 <!-- Menu Section -->
-<section id="gtco-menu" class="section-padding">
+<section id="menu" class="section-padding">
     <div class="container">
         <div class="section-content">
             <div class="row mb-5">
@@ -360,49 +332,70 @@
     </div>
 </section>
 <!-- End of menu Section -->
-<footer class="mastfoot pb-5 bg-white section-padding pb-0">
+
+<!-- Footer Section -->
+<footer id="footer" class="mastfoot pb-5 bg-white section-padding pb-0">
     <div class="inner container">
          <div class="row">
-         	<div class="col-lg-6">
+         	<div class="col-lg-4">
          		<div class="footer-widget pr-lg-5 pr-0">
-         			<img src="img/logo.png" class="img-fluid footer-logo mb-3" alt="">
-	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi? Magni, et voluptatum dolorem.</p>
-	         		<nav class="nav nav-mastfoot justify-content-start">
-		                <a class="nav-link" href="#">
-		                	<i class="fab fa-facebook-f"></i>
-		                </a>
-		                <a class="nav-link" href="#">
-		                	<i class="fab fa-twitter"></i>
-		                </a>
-		                <a class="nav-link" href="#">
-		                	<i class="fab fa-instagram"></i>
-		                </a>
-		            </nav>
+                    <img src="img/logo.png" class="img-fluid footer-logo mb-3" alt="">
+                    <p>La causa es el plato emblemático de la cocina peruana, modesto y delicioso gracias a la composición de sabores y texturas del reino vegetal y otros. En Buenos Aires, esa cocina apareció modestamente en barrios poco glamorosos y así aprendimos a saborearla; poco a poco fueron apareciendo lugares más sofisticados y hoy algunos se colocan en lo más alto –y entre los más caros– de la gastronomía porteña. Siempre en manos de cocineros peruanos que enlazan lo nativo con lo nikkei (esa cocina de fusión con lo japonés ancestral) y dan lugar al juvenil sushi.</p>
+                    <nav class="nav nav-mastfoot justify-content-start">
+                       <a class="nav-link" href="https://wa.me/+5491128485783">
+                           <i class="fab fa-whatsapp"></i>
+                       </a>
+                       <a class="nav-link" href="https://www.instagram.com/lacausanikkei/">
+                           <i class="fab fa-instagram"></i>
+                       </a>
+                       <a class="nav-link" href="https://es-la.facebook.com/lacausanikkei/">
+                           <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </nav>
          		</div>
          		
          	</div>
-         	<div class="col-lg-6">
-         		<div class="footer-widget px-lg-5 px-0">
-         			<h4>Open Hours</h4>
-	         		<ul class="list-unstyled open-hours">
-		                <li class="d-flex justify-content-between"><span>Monday</span><span>9:00 - 24:00</span></li>
-		                <li class="d-flex justify-content-between"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-		                <li class="d-flex justify-content-between"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-		                <li class="d-flex justify-content-between"><span>Thursday</span><span>9:00 - 24:00</span></li>
-		                <li class="d-flex justify-content-between"><span>Friday</span><span>9:00 - 02:00</span></li>
-		                <li class="d-flex justify-content-between"><span>Saturday</span><span>9:00 - 02:00</span></li>
-		                <li class="d-flex justify-content-between"><span>Sunday</span><span> Closed</span></li>
-		              </ul>
+            <div class="col-lg-4">
+                <div class="footer-widget pl-lg-5 pl-0">
+                    <h4>Ubicación</h4>
+                    <p>Reservá mesa</p>
+                    <div class="d-flex justify-content-between">
+                        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1FmlDU9qj8hp4U43aIFmaq754_Zyxs-cG&ehbc=2E312F" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0"width="300" height="300"></iframe>
+                    </div>
+                </div>  
+            </div>
+         	<div class="col-lg-4">
+                <div class="footer-widget px-lg-5 px-0">
+                    <h4>Nuestros locales</h4>
+                    <ul class="list-unstyled open-hours">
+                            <li class="d-flex justify-content-between"><span>Local Palermo</span><span><a href="https://wa.me/+5491132202251">Reservar</a></span></li>
+                            <li class="d-flex justify-content-between"><span>Dirección</span><span><a href="https://www.google.com/maps/place/Av.+Cervi%C3%B1o+3550,+C1425+CABA/@-34.580144,-58.4090835,3a,75y,203.91h,90t/data=!3m6!1e1!3m4!1szP9VzGKCvakpoqiH_I6AeQ!2e0!7i16384!8i8192!4m5!3m4!1s0x95bcb57b8721521b:0xe208caa622e9a0df!8m2!3d-34.5804419!4d-58.4092439">Av. Cerviño 3550</a></span></li>
+                            <li class="d-flex justify-content-between"><span>WhatsApp</span><span><a href="https://wa.me/+5491132202251">+549 11 3220-2251</a></span></li>
+                            <li class="d-flex justify-content-between"><span>Lunes a Viernes</span><span>09:00 - 01:00</span></li>
+                            <li class="d-flex justify-content-between"><span>Sábado</span><span>11:00 - 03:00</span></li>
+                            <li class="d-flex justify-content-between"><span>Domingo</span><span>11:00 - 23:00</span></li>
+                    </ul>
+                    <ul class="list-unstyled open-hours">
+                        <li class="d-flex justify-content-between"><span>Local Recoleta</span><span><a href="https://wa.me/+5491139849500">Reservar</a></span></li>
+                        <li class="d-flex justify-content-between"><span>Dirección</span><span><a href="https://www.google.com/maps/place/La+Causa+Nikkei/@-34.5939942,-58.3930739,3a,75y,255.91h,91.33t/data=!3m6!1e1!3m4!1skNIM2UaVOhFveqNQsE1cCg!2e0!7i16384!8i8192!4m13!1m7!3m6!1s0x95bccabd91324463:0xeedaf17cd9051b3c!2sAv.+Callao+1290,+C1061+CABA!3b1!8m2!3d-34.59416!4d-58.3934238!3m4!1s0x95bccabd9803ffb9:0xeb9024ddb6f993f6!8m2!3d-34.5941708!4d-58.393335">Av. Callao 1290</a></span></li>
+                        <li class="d-flex justify-content-between"><span>WhatsApp</span><span><a href="https://wa.me/+5491139849500">+549 11 3984-9500</a></span></li>
+                        <li class="d-flex justify-content-between"><span>Lunes a Viernes</span><span>09:00 - 01:00</span></li>
+                        <li class="d-flex justify-content-between"><span>Sábado</span><span>11:00 - 03:00</span></li>
+                        <li class="d-flex justify-content-between"><span>Domingo</span><span>11:00 - 23:00</span></li>
+                    </ul>
          		</div>
-         		
          	</div>
+
          	<div class="col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
+         		<p class="mx-auto text-center mb-0">Copyright &copy; <a href="#">La Causa Nikkei</a>, todos los derechos reservados. Diseñado por <a href="https://www.instagram.com/consultora.fox.ar/">Consultora FOX</a></p>
          	</div>
             
         </div>
     </div>
-</footer>	</div>
+</footer>
+<!-- End of Footer Section -->
+
+</div>
 </div>
 	<!-- External JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
