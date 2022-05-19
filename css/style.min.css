@@ -1,15 +1,35 @@
-/*
- *	Resto by GetTemplates.co
- *	URL: https://gettemplates.co
- */
+:root {
+  /* VARIABLES DE COLOR */
+  --color-principal: #6f2e66; /* color principal */
+  --color-principal-oscurecido: #3f1b3a; /* color principal oscurecido */
+  --color-secundario: #ceb754; /* color secundario */
+
+}
+
+/* color boton menu */
+.menu .menu-tab .nav.nav-pills .nav-link {
+  color: var(--color-secundario);
+  background: var(--color-principal);
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.menu .menu-tab .nav.nav-pills .nav-link:hover,
+.menu .menu-tab .nav.nav-pills .nav-link.active {
+  color: var(--color-secundario);
+  background: var(--color-principal-oscurecido);
+}
+
+
 html {
   overflow-x: hidden; }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #000;
-  background-color: #f4ede5; }
+  font-weight: 400;
+  color: var(--color-principal);
+  background-color: var(--color-principal);
+}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
@@ -25,10 +45,10 @@ h1, h2 {
   background-color: #fff; }
 
 .bg-grey {
-  background-color: #f7f8f9; }
+  background-color: #0655a5; }
 
 a {
-  color: #f34949; }
+  color: var(--color-secundario); }
 
 a:focus,
 button:focus {
@@ -38,7 +58,7 @@ button:focus {
 .btn:hover,
 a:hover {
   text-decoration: none;
-  color: #e22104; }
+  color: var(--color-principal-oscurecido); }
 
 .btn-icon {
   display: inline-flex;
@@ -109,9 +129,9 @@ a:hover {
 
 .btn-primary {
   display: inline-block;
-  background-color: #f34949;
-  border-color: #f34949;
-  color: #fff;
+  background-color: var(--color-principal);
+  border-color: var(--color-secundario);
+  color: var(--color-secundario);
   border-radius: 30px;
   padding: 9px 25px;
   text-transform: capitalize;
@@ -120,12 +140,12 @@ a:hover {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .btn-primary:hover {
-    background-color: #e22104;
-    border-color: #e22104;
-    color: #fff; }
+    background-color: var(--color-principal-oscurecido);
+    border-color: var(--color-principal);
+    color: var(--color-secundario); }
 
 .btn-shadow {
-  box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15); }
+  box-shadow: -5px 8px 20px 0px rgba(139, 35, 180, 0.15); }
 
 .btn-icon {
   color: #000; }
